@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Library</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts --> 
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container"> 
+    <header>
+      <h1>The Library.</h1>
+      <div id="definition">
+        <p>/ˈlīˌbrerē,ˈlīb(ə)rē/</p>
+        <p>noun</p>
+        <p>noun: library; plural noun: libraries</p>
+        <p>a building or room containing collections of books, periodicals, and sometimes films and recorded music for people to read, borrow, or refer to.</p>
+      </div>
+    </header>
+
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Add Book Form</h2>
+          <i class="material-icons close">highlight_off</i>
+          <form action="">
+            <div id="form-content">
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title">
+            
+              <label for="author">Author</label>
+              <input type="text" name="author" id="author">
+            
+              <label for="pages">Number of Pages</label>
+              <input type="text" name="pages" id="pages">
+            
+              <label for="status">Select a Status</label>
+              <select name ="status" id="status">
+                <option value ="Read" selected>Read</option>
+                <option value ="In Progress">In Progress</option>
+                <option value ="Unread">Unread</option>
+              </select>
+              
+              <input type="submit" value="Add to Library" id="submit-btn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Status</th>
+          <th><button id="add-book">Add a Book</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="sample">
+          <td>0</td>
+          <td>Sample Title</td>
+          <td>Sample Author</td>
+          <td>100</td>
+          <td>Unread</td>
+          <td>
+            <button id="delete-btn">
+              <i class="material-icons delete">delete_outline</i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table> 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
